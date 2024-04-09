@@ -1,0 +1,164 @@
+body {
+    font-family: 'Public Sans';
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.header .logo .imagem{
+    width: 100px;
+}
+.header .titulo{
+    margin-left: 7px;
+    font-weight: 800;
+    font-size: 17px;
+    transition: 0.1s ease-in-out;
+}
+.header .titulo:hover{
+    color: #1ed760;
+}
+.header .navigation .menu{
+    display: flex;
+}
+.header .navigation .menu .item a {
+    margin: 10px;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 40%;
+}
+.header .navigation .menu .item a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+.conteudo-principal .paineis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+}
+.conteudo-principal .paineis .imagem-painel {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.conteudo-principal .paineis .projeto1{
+    background-image: url('../images/painel1.jpg');
+}
+.conteudo-principal .paineis .projeto2{
+    background-image: url('../images/painel2.jpg');
+}
+.conteudo-principal .paineis .projeto3{
+    background-image: url('../images/painel3.jpg');
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar{
+    opacity: 1;
+}
+.conteudo-principal .paineis .titulo{
+    color: white;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+}
+.conteudo-principal .paineis .seta{
+    background: url('../images/seta.png') center no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+.conteudo-principal .paineis .seta.btn-voltar{
+    left: 20px;
+    transform: rotateY(180deg);
+}
+.conteudo-principal .paineis .seta.btn-avancar{
+    right: 20px;
+}
+.quem-somos{
+    background-color: #2941ab;
+}
+.quem-somos .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.quem-somos .conteudo .infos{
+    width: 40%;
+}
+.quem-somos .conteudo .imagem{
+    width: 60%;
+}
+.quem-somos .conteudo .infos .titulo{
+    font-size: 50px;
+    color: #1ed760;
+    margin-bottom: 20px;
+}
+.quem-somos .conteudo .infos p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 400;
+}
+.footer{
+    padding: 80px 0 20px 0;
+}
+.footer .navigation{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .navigation .logo .imagem{
+    width: 100px;
+}
+.footer .navigation .logo .titulo{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.footer .navigation .logo .titulo:hover{
+    color: #1ed760;
+}
+.footer .socials {
+    display: flex;
+}
+.footer .socials a{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    width: 60px;
+    transition: 0.3s ease-in-out;
+}
+.footer .socials a:hover{
+    background-color: #1ed760;
+}
+.footer .copyright{
+    margin-top: 70px;
+    text-align: center;
+}

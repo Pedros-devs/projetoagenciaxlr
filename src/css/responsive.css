@@ -1,0 +1,49 @@
+@media(max-width: 1200px){
+    .quem-somos .conteudo{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        width: 100%;
+
+    }
+    .quem-somos .conteudo .imagem {
+        display: none;
+    }
+}
+@media(max-width: 940px){
+    .footer .navigation {
+        justify-content: center;
+    }
+    .footer .navigation .logo{
+        margin-bottom: 30px;
+    }
+    .footer .navigation .logo, 
+    .footer .navigation .socials{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px){
+    .conteudo-principal .paineis{
+        height: 500px;
+    }
+}
+
+@media (max-width: 624px){
+    .header{
+        justify-content: center;
+}
+.header .logo{
+    margin-bottom: 30px;
+}
+.header .navigation .menu .item a{
+    font-size: calc(0.6em + 1vw);
+}
+}
+
+@media (max-width: 425px) {
+    .header .navigation .menu .item a{
+        font-size: calc(0.52em + 1vw);
+}
+}
